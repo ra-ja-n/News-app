@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position:relative;
+}
+
+nav{
+    background-color:rgb(151, 55, 21);
+    box-shadow: 0 0 7px 10px rgba(5, 1, 1, 0.3);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+    font-size: 20px;
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 30px;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+#search-input{
+    max-width: 400px;
+    height: 40px;
+    outline:auto;
+    border: none;
+    border-radius: 10px;
+    padding:10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    background-color: rgb(252, 252, 252);
+    transition: 0.5s;
+    margin-right: 20px;
+    cursor:text;
+}
+#search-button {
+    outline: none;
+    border: none;
+    height:40px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    background-color: rgb(252, 252, 252);
+    transition: 0.5s;
+    cursor:pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#search-button:hover{
+    background-color: rgb(19, 6, 6);
+    color: rgb(209, 201, 198);
+    transition: 0.3s;
+    cursor:pointer;
+}
+#blog-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+    font-size: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(252, 252, 252);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.blog-card{
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+    margin : 10px;
+    padding: 10px 10px;
+}
+.blog-card:hover{
+    box-shadow: 0 0 7px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    cursor:pointer;
+}
+.blog-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.blog-card h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.blog-card p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-top: 0.7rem;
+    letter-spacing: 2px;
+}
+@media(max-width:935px){
+    nav{
+        padding: 0 20px;
+    }
+    .navbar .logo{
+        font-size:30px;
+        margin-left: 10px;
+    }
+    .heading{
+        font-size: 27px;
+        margin-left: 15px;
+    }
+    #search-input{
+    width:150px;
+    padding:10px 10px;
+    }
+    .blog-card{
+        width:100%;
+    }
+}
+@media(max-width:600px){
+    nav{
+        padding: 0 20px;
+    }
+    .navbar .logo{
+        font-size:24px;
+        margin-left: -5px;
+    }
+    .heading{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    #search-input{
+    width:100px;
+    padding:10px 10px;
+    }
+    #search-button{
+        width: 100px;
+    }
+    .blog-card{
+        width:100%;
+    }
+}
